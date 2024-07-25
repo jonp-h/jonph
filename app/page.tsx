@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import Parallax from "@/components/Parallax";
+import Footer from "@/components/footer/Footer";
+import Parallax from "@/components/parallax/Parallax";
 import Slides from "@/components/slides/Slides";
 
 export default function LandingPage() {
@@ -8,7 +8,9 @@ export default function LandingPage() {
       <section id="parallax">
         <Parallax />
       </section>
-      <Slides />
+      <div>
+        <Slides />
+      </div>
       <section>
         <Footer />
       </section>

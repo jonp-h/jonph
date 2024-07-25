@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html {
@@ -23,8 +25,18 @@ section {
   overflow: hidden;
 }
 
-#slides {
-  height: auto;
-  scroll-snap-type: y mandatory;
-  scroll-snap-align: start;
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
 }
