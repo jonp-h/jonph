@@ -33,6 +33,12 @@
       margin-top: 15%;
     }
   }
+
+  @include high-res-desktop {
+    h1 {
+      font-size: 450%;
+    }
+  }
 }
 
 .sky {

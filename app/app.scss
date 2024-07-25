@@ -40,3 +40,8 @@ section {
     @content;
   }
 }
+@mixin high-res-desktop {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
