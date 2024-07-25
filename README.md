@@ -1,6 +1,6 @@
 # Jonph
 
-Jonph is a personal web application hosted at [jonph.no](jonph.no). While not very complex or detailed, the webpage showcases some interesting use of elements in motion.
+Jonph is a personal web application hosted at [jonph.no](https://jonph.no). While not very complex or detailed, the webpage showcases some interesting use of elements in motion.
 
 ![A screenshot of the web application](/public/exampleImage.png)
 
