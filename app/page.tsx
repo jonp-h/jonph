@@ -8,10 +8,10 @@ export default function LandingPage() {
       <section id="parallax">
         <Parallax />
       </section>
-      <div>
+      <div id="slides">
         <Slides />
       </div>
-      <section>
+      <section id="footer">
         <Footer />
       </section>
     </>
