@@ -1,4 +1,4 @@
-@import "../../app/app.scss";
+@use "../../app/app.scss" as app;
 
 .parallax {
   width: 100%;
@@ -15,7 +15,7 @@
     z-index: 1;
   }
 
-  @include tablet {
+  @include app.tablet {
     justify-content: center;
     align-items: center;
     h1 {
@@ -24,7 +24,7 @@
     }
   }
 
-  @include mobile {
+  @include app.mobile {
     font-size: small;
     text-align: center;
     align-items: center;
@@ -34,7 +34,7 @@
     }
   }
 
-  @include high-res-desktop {
+  @include app.high-res-desktop {
     h1 {
       margin-top: 15%;
       font-size: 450%;
@@ -61,12 +61,12 @@
   position: absolute;
   z-index: 2;
 
-  @include tablet {
+  @include app.tablet {
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  @include mobile {
+  @include app.mobile {
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -81,12 +81,12 @@
   position: absolute;
   z-index: 2;
 
-  @include tablet {
+  @include app.tablet {
     margin-top: -25%;
     background-position: 80% 100%;
   }
 
-  @include mobile {
+  @include app.mobile {
     margin-top: -50%;
     background-size: cover;
     background-position: 73% 100%;
@@ -101,12 +101,12 @@
   position: absolute;
   z-index: 3;
 
-  @include tablet {
+  @include app.tablet {
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  @include mobile {
+  @include app.mobile {
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -121,12 +121,12 @@
   position: absolute;
   z-index: 4;
 
-  @include tablet {
+  @include app.tablet {
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  @include mobile {
+  @include app.mobile {
     background-size: contain;
     background-repeat: no-repeat;
   }

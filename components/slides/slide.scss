@@ -1,4 +1,4 @@
-@import "../../app/app.scss";
+@use "../../app/app.scss" as app;
 
 .slide {
   position: relative;
@@ -13,7 +13,7 @@
     font-size: xx-large;
     z-index: 5;
 
-    @include mobile {
+    @include app.mobile {
       padding-top: calc(100vh - 100px);
       font-size: x-large;
     }
@@ -42,11 +42,11 @@
     justify-content: center;
     gap: 3vw;
 
-    @include tablet {
+    @include app.tablet {
       flex-direction: column;
     }
 
-    @include mobile {
+    @include app.mobile {
       flex-direction: column;
     }
 
@@ -67,14 +67,14 @@
       flex-direction: column;
       gap: 3vh;
 
-      @include tablet {
+      @include app.tablet {
         transform: none !important;
         padding: 1vh;
         align-items: center;
         text-align: center;
       }
 
-      @include mobile {
+      @include app.mobile {
         transform: none !important;
         padding: 1vh;
         align-items: center;
@@ -84,11 +84,11 @@
       h2 {
         font-size: 600%;
 
-        @include tablet {
+        @include app.tablet {
           font-size: 500%;
         }
 
-        @include mobile {
+        @include app.mobile {
           font-size: 400%;
         }
       }
@@ -97,11 +97,11 @@
         color: gray;
         font-size: 200%;
 
-        @include tablet {
+        @include app.tablet {
           font-size: 150%;
         }
 
-        @include mobile {
+        @include app.mobile {
           font-size: 150%;
         }
       }
